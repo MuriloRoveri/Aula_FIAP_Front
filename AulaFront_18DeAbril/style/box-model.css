@@ -4,7 +4,7 @@ div {
     width: 30%;
     /* max-width: 30%; lagura da div - min-width(minimo) max-width(maximo) */
     height: 250px; /* altura da div - min-height(minimo) max-width(maximo) */
-    overflow: auto; /* hidden(some fora da div) scroll(opção de scrollar o texto)*/
+    /* overflow: auto; hidden(some fora da div) scroll(opção de scrollar o texto) */
     /* border-width: 2px; Largura da borda */
     border-width: 7px 10px 15px 20px; /* Top -> Right -> Bottom -> Left */
     /* border-top-width: 7px;
@@ -15,5 +15,9 @@ div {
     /* border-color: black; Cor da borda */
     border: 2px solid black; /* Forma Direta */
     padding: 3%; /* espaço da div com a borda */
-    margin: 2%; /* Margem entre div */
+    margin: 2% auto; /* Margem entre div */
+}
+
+#segunda {
+    box-sizing: border-box;
 }
