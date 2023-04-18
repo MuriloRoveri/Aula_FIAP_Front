@@ -23,8 +23,10 @@ h1 {
     font-weight: bold; /* Negrito */
     /*text-transform: lowercase;*/ /* Tudo em Minusculo */
     /*text-transform: uppercase;*/ /* Tudo em Maiusculo */
-    /*text-transform: capitalize;*/ 
-
+    text-transform: capitalize;
+    line-height: 25px; /* Espaçamento entre cada letra da palavra */
+    letter-spacing: 2px; /* Espaçamento entre cada letra */
+    word-spacing: 5px; /* Espaçamento entre palavras */
 }
 
 #terceiro {
