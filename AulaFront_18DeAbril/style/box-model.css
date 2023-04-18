@@ -1,3 +1,7 @@
+body {
+    background-color: rgb(104, 104, 104);
+}
+
 div {
     font-style: bold;
     background-color: rgb(94, 211, 211);
@@ -16,8 +20,11 @@ div {
     border: 2px solid black; /* Forma Direta */
     padding: 3%; /* espaço da div com a borda */
     margin: 2% auto; /* Margem entre div */
+    /* border-bottom-left-radius: 50px; Especifica qual dos cantos da borda você quer */
 }
 
 #segunda {
-    box-sizing: border-box;
+    box-sizing: border-box; /* Faz a div toda ter a width e height igual a medida */
+    border-radius: 10px; /* Curvar o canto da border */
+
 }
