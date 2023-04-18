@@ -1,5 +1,15 @@
 div {
     background-color: rgb(94, 211, 211);
-    width: 300px;
-    height: 150px;
+    width: 30%;
+    /*max-width: 30%;*/ /* lagura da div - min-width(minimo) max-width(maximo) */
+    height: 250px; /* altura da div - min-height(minimo) max-width(maximo) */
+    overflow: auto; /* hidden(some fora da div) scroll(opção de scrollar o texto)*/
+    /* border-width: 2px; */ /* Largura da borda */
+    border-width: 7px 10px 15px 20px; /* Top -> Right -> Bottom -> Left */
+    /* border-top-width: 7px;
+    border-right-width: 10px;
+    border-left-width: 15px;
+    border-bottom-width: 20px; */
+    border-style: solid; /* Estilo da borda */
+    border-color: black; /* Cor da borda */
 }
