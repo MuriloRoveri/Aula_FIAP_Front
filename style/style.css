@@ -1,5 +1,11 @@
 body {
     background-color: rgba(54, 54, 54, 0.808);
+    /* font-size: 20px; */
+}
+
+#titulo {
+    background-color: rgb(108, 110, 110);
+    color: rgba(75, 148, 243, 0.945);  
 }
 
 #primeiro {
@@ -9,12 +15,16 @@ body {
 
 #segundo {
     font-size: 150%;
+    font-weight: bold;
 }
 
 #terceiro {
     font-size: 1.5em;
+    /*font-style: italic;*/
+    font-style: small-caps;
 }
 
-#quarto {
-
+#exemplo {
+    font-weight: bold;
+    color:rgb(88, 48, 124)
 }
