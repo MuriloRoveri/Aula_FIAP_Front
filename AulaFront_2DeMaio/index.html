@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table,td{
+            border: 1px solid black;
+        }
+        
+        th{
+            border: 1px solid blue
+        }
+        .lista{
+            border: 1px solid rgb(235, 36, 79);
+            text-align: center;
+            color:rgb(255, 0, 98)
+        }
+    </style>
+
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Telefone</th>
+              <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Manoel Gomes</td> <!-- rowspan="" Aumentar tamanho na tabela -->
+                <td>93433-5467</td>
+                <td>caneta.azul@gmail.com</td>
+            </tr>
+            <tr>
+                <!-- <td>Manoel Gomes</td> -->
+                <td>1234-9876</td>
+                <td>manoelgomes@fiap.com.br</td>
+            </tr>
+            <tr>
+                <td>Nal do Canal</td>
+                <td>8922-2345</td>
+                <td>naldocanal@gmail.com</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3" class="lista"> Lista de Contatos da FIAP</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
