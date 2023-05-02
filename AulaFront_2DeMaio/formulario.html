@@ -6,16 +6,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulários</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        form{
+            width: 300px;
+            margin: auto;
 
+        }
+
+        label{
+            display: inline-block;
+            width: 80px;
+        }
+
+        input{
+            margin-bottom: 7px;
+        }
+    </style>
 </head>
 <body>
     <h1>Formulários</h1>
 
     <form action="cadastro" name="cadastro" method="get">
-        Nome: <input type="text" name="nome" id="x-nome"><br> <!-- Nome: -->
-        Email: <input type="text" name="email" id="x-email"><br> <!-- Email: -->
-        <input type="submit" value="Cadastrar"> <!-- Botão de Enviar: -->
+        <fieldset>
+            <legend>Dados Pessoais</legend>
 
+            <label for="x-nome">Nome:</label> <!-- Titulo Clicável -->
+            <input type="text" name="nome" id="x-nome"><br> <!-- Nome: -->
+
+            <label for="x-email">Email:</label> <!-- Titulo Clicável -->
+            <input type="email" name="email" id="x-email"><br> <!-- type:email (email) -->
+
+            <label for="x-senha">Senha:</label> <!-- Titulo Clicável -->
+            <input type="password" name="senha" id="x-senha"> <!-- type:password (senha) -->
+        </fieldset>
+
+        <fieldset>
+            <legend>Outros</legend>
+            <label for="x-busca">Busca:</label>
+            <input type="url" name="busca" id="x-busca"> <!-- type:url (buscar) -->
+        </fieldset>
+        <input type="submit" value="Cadastrar"> <!-- Botão de Enviar: -->
     </form>
 </body>
 </html>
