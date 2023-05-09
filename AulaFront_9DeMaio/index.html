@@ -11,9 +11,38 @@
     <h1>Formulários</h1>
 
     <form action="cadastrar" method="get">
-        <label for="x-nome">Nome</label>
-        <input type="text" name="nome" id="x-nome"><br>
-        <input type="submit" value="Cadastrar">
+
+        <fieldset>  <!-- fieldset (coloca dentro de uma "caixa") -->
+            <legend>Dados Pessoais</legend> <!-- legend (Título do Fieldset) -->
+            <label for="x-nome">Nome</label>
+            <input type="text" name="nome" id="x-nome"><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Tamanho</legend>
+            <input type="radio" name="tamanho" id="x-peq" value="P"><!-- input:radio (input de opção) -->
+            <label for="x-peq">Pequeno</label><br>
+
+            <input type="radio" name="tamanho" id="x-med" value="M">
+            <label for="x-med">Médio</label><br>
+
+            <input type="radio" name="tamanho" id="x-gde" value="G">
+            <label for="x-gde">Grande</label>
+        </fieldset>
+
+        <fieldset> <!-- Se coloca value em checkbox para determinar seu valor -->
+            <legend>Cor</legend>
+            <input type="checkbox" name="cor" id="x-azul" value="azul"> <!-- input:checkbox -->
+            <label for="x-azul">Azul</label><br>
+
+            <input type="checkbox" name="cor" id="x-verde" value="verde">
+            <label for="x-verde">Verde</label><br>
+
+            <input type="checkbox" name="cor" id="x-vermelho" value="vermelho">
+            <label for="x-vermelho">Vermelho</label>
+        </fieldset>
+
+        <input type="submit" value="Cadastrar"> <!-- input:submit -->
     </form>
     
 </body>
