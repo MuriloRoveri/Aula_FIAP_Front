@@ -30,9 +30,10 @@
 
 .item1 {
     order: 1; /* Valor para ordem dos itens */
-    flex-grow: 1; /* Valor para preencher na div */
-    flex-basis: 100px; /* Tamanho base sem distribuir no grow */
-    flex-shrink: 1; /* Delimitar se o tamanho base pode ser diminuido ou não */
+    /*flex-grow: 1;*/ /* Valor para preencher na div */
+    /*flex-shrink: 1;*/ /* Delimitar se o tamanho base pode ser diminuido ou não */
+    /*flex-basis: 100px;*/ /* Tamanho base sem distribuir no grow */
+    flex: 1 1 100px; /* Resumindo tudo */
 }
 
 .item2 {
