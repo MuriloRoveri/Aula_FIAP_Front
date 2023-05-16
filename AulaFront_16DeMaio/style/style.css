@@ -11,12 +11,21 @@
     background-color: rgb(99, 162, 199);
     border: 2px solid rgb(93, 146, 148);   
     display: flex;
-    flex-direction: row;
+    flex-direction: column; /* row / row-reverse /column / column-reverse */
     flex-wrap: nowrap; /* nowrap / wrap / wrap-reverse */
+    justify-content: center; /* flex-start / flex-end / center / space-around / space-between */
+    align-items: center; /* stretch / flex-start / flex-end / center /baseline */
+    gap: 15px;
 }
 
 .item {
     background-color: rgb(104, 177, 219);
     border: 1px solid rgb(5, 95, 155);
-    /* width: 150px; */
+    width: 150px;
+    text-align: center;
+    color: rgb(70, 67, 238);
 }
+
+/* .item1 {
+    padding-top: 20px;
+} */
