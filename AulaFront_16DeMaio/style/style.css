@@ -14,7 +14,7 @@
     flex-direction: row; /* row / row-reverse /column / column-reverse */
     flex-wrap: nowrap; /* nowrap / wrap / wrap-reverse */
     justify-content: flex-start; /* flex-start / flex-end / center / space-around / space-between */
-    align-items: baseline; /* stretch / flex-start / flex-end / center /baseline */
+    align-items: stretch; /* stretch / flex-start / flex-end / center /baseline */
     gap: 15px; /* Espaço entre as divs */
     align-content: stretch; /* stretch / flex-start / flex-end / center / space-around / space-evenly*/
 
@@ -28,6 +28,23 @@
     color: rgb(70, 67, 238);
 }
 
-/* .item1 {
-    padding-top: 20px;
-} */
+.item1 {
+    order: 1; /* Valor para ordem dos itens */
+    flex-grow: 1; /* Valor para preencher na div */
+    flex-basis: 100px; /* Tamanho base sem distribuir no grow */
+    flex-shrink: 1; /* Delimitar se o tamanho base pode ser diminuido ou não */
+}
+
+.item2 {
+    order: 0;
+    flex-grow: 1;
+    flex-basis: 150px;
+    flex-shrink: 0;
+}
+
+.item3 {
+    order: -1;
+    flex-grow: 1;
+    flex-basis: 200px;
+    flex-shrink: 1;
+}
