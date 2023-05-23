@@ -30,6 +30,7 @@ nav {
     background-color: rgb(140, 158, 240);
     display: flex;
     justify-content: center;
+    border: 1px solid rgb(83, 112, 241);
 }
 
 nav ul {
@@ -61,8 +62,16 @@ section{
     background-color: rgb(171, 185, 245);
     flex-grow: 1;
     padding: 15px;
+    border: 1px solid black;
 }
 
+/* Imagens Responsivas*/
+img{
+    width: 100%;
+    border-radius: 100px;
+    border-color: black;
+    border-style: groove;
+}
 
 .item1{
     font-size: 25px; /* Medida -> em (Medida fonte)*/
@@ -88,3 +97,4 @@ footer {
 footer p{
     color: white;
 }
+
