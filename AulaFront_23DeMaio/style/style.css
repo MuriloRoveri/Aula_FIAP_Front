@@ -98,3 +98,10 @@ footer p{
     color: white;
 }
 
+/* Media Queries -> Configurar o site para todos os dispositivos*/
+@media(max-width: 920px) {
+    section{
+        width: 50%;
+        background-color:rgb(226, 226, 226);
+    }
+}
