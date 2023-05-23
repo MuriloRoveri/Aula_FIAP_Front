@@ -15,7 +15,30 @@
         <fieldset>  <!-- fieldset (coloca dentro de uma "caixa") -->
             <legend>Dados Pessoais</legend> <!-- legend (Título do Fieldset) -->
             <label for="x-nome">Nome</label>
-            <input type="text" name="nome" id="x-nome"><br>
+            <input type="text" name="nome" id="x-nome" required autofocus autocomplete maxlength="20"><br> 
+            <!-- required (torna o campo obrigatório) -->
+            <!-- autofocus (foca no campo automaticamente) -->
+            <!-- autocomplete -->
+            <!-- maxlength (numero max de caracteres) -->   
+
+            <label for="x-uf">Estado</label>
+            <select name="uf" id="x-uf">
+                <option value="" disabled selected>Selecionar</option> <!-- disabled selected (não selecionavel) -->
+
+                <optgroup label="Sudeste"> <!-- optgroup (Criar grupo de options) -->
+                    <option value="SP">São Paulo</option> <!-- option (criar opções) -->
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="ES">Espirito Santo</option>
+                </optgroup>
+
+                <optgroup label="Sul">
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="PR">Paraná</option>
+                </optgroup>
+            </select> <!-- select -->
+
         </fieldset>
 
         <fieldset>
@@ -42,7 +65,14 @@
             <label for="x-vermelho">Vermelho</label>
         </fieldset>
 
-        <input type="submit" value="Cadastrar"> <!-- input:submit -->
+        <fieldset>
+            <legend>Observação</legend>
+            <textarea name="obs" id="x-obs" cols="30" rows="6"></textarea><br> <!-- textarea -->
+        </fieldset>
+
+        <input type="submit" value="Cadastrar"> <!-- input:submit (Botão de confirmar)-->
+        <input type="reset" value="Limpar"> <!-- input:reset (Reinicia a página web) -->
+        <input type="button" value="Calcular"> <!-- input:button -->
     </form>
     
 </body>

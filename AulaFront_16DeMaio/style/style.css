@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 300px;
+    background-color: rgb(99, 162, 199);
+    border: 2px solid rgb(93, 146, 148);   
+    display: flex;
+    flex-direction: row; /* row / row-reverse /column / column-reverse */
+    flex-wrap: nowrap; /* nowrap / wrap / wrap-reverse */
+    justify-content: flex-start; /* flex-start / flex-end / center / space-around / space-between */
+    align-items: stretch; /* stretch / flex-start / flex-end / center /baseline */
+    gap: 15px; /* Espaço entre as divs */
+    align-content: stretch; /* stretch / flex-start / flex-end / center / space-around / space-evenly*/
+
+}
+
+.item {
+    background-color: rgb(104, 177, 219);
+    border: 1px solid rgb(5, 95, 155);
+    width: 150px;
+    text-align: center;
+    color: rgb(70, 67, 238);
+}
+
+.item1 {
+    order: 1; /* Valor para ordem dos itens */
+    /*flex-grow: 1;*/ /* Valor para preencher na div */
+    /*flex-shrink: 1;*/ /* Delimitar se o tamanho base pode ser diminuido ou não */
+    /*flex-basis: 100px;*/ /* Tamanho base sem distribuir no grow */
+    flex: 1 1 100px; /* Resumindo tudo */
+}
+
+.item2 {
+    order: 0;
+    flex-grow: 1;
+    flex-basis: 150px;
+    flex-shrink: 0;
+}
+
+.item3 {
+    order: -1;
+    flex-grow: 1;
+    flex-basis: 200px;
+    flex-shrink: 1;
+}
